@@ -27,3 +27,16 @@ variable "rg_name_suffix" {
   description = "Resource Group suffix for naming convention"
   type        = string
 }
+
+# Sensitive variables for security module (pass via env variables)
+variable "tenant_id" {
+  description = "Azure tenant ID"
+  type        = string
+  sensitive   = true
+}
+
+variable "user_object_id" {
+  description = "Azure AD Object ID for Key Vault access"
+  type        = string
+  sensitive   = true
+}
