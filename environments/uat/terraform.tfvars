@@ -1,0 +1,6 @@
+project_name   = "myapp"
+environment    = "uat"
+location       = "eastus"
+owner          = "devteam"
+cost_center    = "cc1001"
+rg_name_suffix = "core"
